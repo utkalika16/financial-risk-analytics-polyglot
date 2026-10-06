@@ -1,0 +1,11 @@
+<!DOCTYPE html><html><head><title>Transactions</title><link rel="stylesheet" href="style.css"></head><body>
+<div class="layout"><aside class="sidebar"><div class="brand">Financial Risk Analytics<small>Management System</small></div>
+<nav class="nav">
+<a href="dashboard.html">Dashboard</a><a href="customers.html">Customers</a><a href="accounts.html">Accounts</a><a href="transactions.html">Transactions</a><a href="risk.html">Risk Analysis</a>
+</nav><div class="logout"><button class="danger" onclick="logout()">Logout</button></div></aside><main class="main"><div class="topbar"><div><h1>Transactions</h1><p>Deposit, withdraw and view transaction history.</p></div><button onclick="loadTransactions()">Refresh</button></div>
+<div class="grid">
+<div class="card"><h2>Deposit</h2><input id="depositAccount" placeholder="Account ID"><input id="depositAmount" type="number" placeholder="Amount"><button onclick="deposit()">Deposit</button></div>
+<div class="card"><h2>Withdraw</h2><input id="withdrawAccount" placeholder="Account ID"><input id="withdrawAmount" type="number" placeholder="Amount"><button onclick="withdraw()">Withdraw</button></div>
+</div>
+<div class="card" style="margin-top:20px"><div class="topbar" style="margin-bottom:5px"><h2>Transaction History</h2><button onclick="loadTransactions()">Refresh</button></div><div id="dataTable" class="table-wrap"><p class="muted">Click Refresh.</p></div></div>
+<div class="result" id="result">Transaction operation results will appear here.</div></main></div><script src="script.js"></script><script>requireLogin();</script></body></html>

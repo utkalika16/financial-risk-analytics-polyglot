@@ -1,0 +1,8 @@
+<!DOCTYPE html><html><head><title>Customers</title><link rel="stylesheet" href="style.css"></head><body>
+<div class="layout"><aside class="sidebar"><div class="brand">Financial Risk Analytics<small>Management System</small></div>
+<nav class="nav">
+<a href="dashboard.html">Dashboard</a><a href="customers.html">Customers</a><a href="accounts.html">Accounts</a><a href="transactions.html">Transactions</a><a href="risk.html">Risk Analysis</a>
+</nav><div class="logout"><button class="danger" onclick="logout()">Logout</button></div></aside><main class="main"><div class="topbar"><div><h1>Customers</h1><p>Add and view customer records.</p></div><button onclick="loadCustomers()">Refresh</button></div>
+<div class="grid"><div class="card"><h2>Add Customer</h2><input id="customerId" placeholder="Customer ID"><input id="customerName" placeholder="Name"><input id="customerEmail" placeholder="Email"><input id="customerPhone" placeholder="Phone"><div class="actions"><button onclick="addCustomer()">Add Customer</button><button class="secondary" onclick="loadCustomers()">View Customers</button></div></div>
+<div class="card"><h2>Customer Records</h2><div id="dataTable" class="table-wrap"><p class="muted">Click View Customers.</p></div></div></div>
+<div class="result" id="result">Customer operation results will appear here.</div></main></div><script src="script.js"></script><script>requireLogin();</script></body></html>

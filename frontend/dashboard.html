@@ -1,0 +1,14 @@
+<!DOCTYPE html><html><head><title>Dashboard</title><link rel="stylesheet" href="style.css"></head><body>
+<div class="layout"><aside class="sidebar"><div class="brand">Financial Risk Analytics<small>Management System</small></div>
+<nav class="nav">
+<a href="dashboard.html">Dashboard</a><a href="customers.html">Customers</a><a href="accounts.html">Accounts</a><a href="transactions.html">Transactions</a><a href="risk.html">Risk Analysis</a>
+</nav><div class="logout"><button class="danger" onclick="logout()">Logout</button></div></aside><main class="main"><div class="topbar"><div><h1>Dashboard</h1><p>Overview of your financial risk system.</p></div><button onclick="loadDashboard()">Refresh</button></div>
+<div class="grid four">
+<div class="card"><h3>Customers</h3><div id="customerCount" class="stat">-</div><a class="btn" href="customers.html">Manage Customers</a></div>
+<div class="card"><h3>Accounts</h3><div id="accountCount" class="stat">-</div><a class="btn" href="accounts.html">Manage Accounts</a></div>
+<div class="card"><h3>Transactions</h3><div id="transactionCount" class="stat">-</div><a class="btn" href="transactions.html">View Transactions</a></div>
+<div class="card"><h3>Risk Analysis</h3><div class="stat">AI</div><a class="btn" href="risk.html">Analyze Risk</a></div>
+</div>
+<div class="card" style="margin-top:20px"><h2>Quick Actions</h2><div class="actions">
+<a class="btn" href="customers.html">+ Add Customer</a><a class="btn" href="accounts.html">+ Add Account</a><a class="btn" href="transactions.html">Deposit / Withdraw</a><a class="btn" href="risk.html">Run Risk Analysis</a>
+</div></div></main></div><script src="script.js"></script><script>loadDashboard();</script></body></html>

@@ -1,0 +1,9 @@
+<!DOCTYPE html><html><head><title>Risk Analysis</title><link rel="stylesheet" href="style.css"></head><body>
+<div class="layout"><aside class="sidebar"><div class="brand">Financial Risk Analytics<small>Management System</small></div>
+<nav class="nav">
+<a href="dashboard.html">Dashboard</a><a href="customers.html">Customers</a><a href="accounts.html">Accounts</a><a href="transactions.html">Transactions</a><a href="risk.html">Risk Analysis</a>
+</nav><div class="logout"><button class="danger" onclick="logout()">Logout</button></div></aside><main class="main"><div class="topbar"><div><h1>Risk Analysis</h1><p>Evaluate transaction risk using amount and frequency.</p></div></div>
+<div class="note">Risk score is calculated by the backend. Amount above 50,000 adds 50 points; frequency above 10 adds 30 points.</div>
+<div class="grid"><div class="card"><h2>Analyze Transaction</h2><input id="riskCustomer" placeholder="Customer ID"><input id="riskAccount" placeholder="Account ID"><input id="riskAmount" type="number" placeholder="Transaction Amount"><input id="riskFrequency" type="number" placeholder="Transaction Frequency"><button onclick="analyzeRisk()">Analyze Risk</button></div>
+<div class="card"><h2>Risk Result</h2><div id="riskSummary"><p class="muted">Run an analysis to see the result.</p></div></div></div>
+<div class="result" id="result">Risk operation results will appear here.</div></main></div><script src="script.js"></script><script>requireLogin();</script></body></html>
