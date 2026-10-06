@@ -1,0 +1,5 @@
+venv/
+__pycache__/
+*.pyc
+*.log
+FRONTEND_BUTTON_CHECK.txt
